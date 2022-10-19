@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T08:51:33.072Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" version="20.4.1" etag="J7Q4efGkWEaXLUSeQHIF" type="github"><diagram id="UDnTZoBmg_uXjOcvCL7a">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-19T13:13:35.722Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="WCFnhWC45vK8rphIeOeI" version="20.4.1" type="github">
+  <diagram id="UDnTZoBmg_uXjOcvCL7a" name="第 1 页">
+    <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GrSkVVgJBiM8mkLNyYpN-2" value="用户" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="344" y="110" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GrSkVVgJBiM8mkLNyYpN-3" value="点击数据资产菜单下的任意看板" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="347" y="210" width="134" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GrSkVVgJBiM8mkLNyYpN-6" value="调用 &lt;br&gt;/ads-dashboard/dashboard/getSearchInfo 获取搜索信息（包含品牌下拉列表，和一些默认搜索值，比如默认报告时间和默认品牌）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297.75" y="300" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GrSkVVgJBiM8mkLNyYpN-8" value="一个 DashboardReport 只可能有一个 DashboardSearch 组件， DashboardReport 将 searchConfigList&amp;nbsp;&lt;br&gt;&amp;nbsp;配置项传给 DashboardSearch 组件，由 searchConfigList 决定 DashboardSearch 如何渲染" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297.75" y="450" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GrSkVVgJBiM8mkLNyYpN-9" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297.75" y="590" width="232.5" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
