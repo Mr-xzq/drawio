@@ -1,96 +1,126 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T08:36:16.761Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="JSDh8QUaZPY4niGfi-UN" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T08:47:53.166Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="WIjwqV0itZZFuCj-8v70" version="20.4.1" type="github">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="第 1 页">
     <mxGraphModel dx="2377" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-23" value="用户" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="344" y="170" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-25" value="点击数据资产菜单下的任意看板" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="347" y="270" width="134" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-27" value="通过看板 id 调用 &lt;br&gt;/ads-dashboard/dashboard/getDashboard 获取看板信息（看板信息包含所有报告信息）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="380" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-28" value="每个看板下有多个报告，渲染形式为多个 tab，默认情况下选中第一个报告，当选中报告时" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="530" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-29" value="通过报告 id 调用&lt;br&gt;/ads-dashboard/dashboard/getReport &lt;br&gt;获取报告信息（报告信息包含所有模块信息）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="670" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-30" value="DashboardReport 组件获取到报告信息之后，将其中的模块信息分发到对应的DashboardModule 组件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="820" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-31" value="DashboardModule 组件获取到模块信息" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="970" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-32" value="根据 chartGroupList 对其进行列（column）的划分" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297.75" y="1110" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-33" value="根据&amp;nbsp;horizontalList 对其进行行（row）的划分" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297.75" y="1250" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-34" value="每一行中有多个 chart，通过&amp;nbsp; getChartCategoryByType(chartType) 对 chart 进行分类，不同类型的 chart 有不同的渲染方式" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297.75" y="1380" width="232.5" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.461;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-36">
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-23" target="mEZ1tc_DkD5fEl3t15AL-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-46" value="Echarts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mEZ1tc_DkD5fEl3t15AL-37">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-23" value="用户" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="344" y="170" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-25" target="mEZ1tc_DkD5fEl3t15AL-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-25" value="点击数据资产菜单下的任意看板" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="347" y="270" width="134" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-27" target="mEZ1tc_DkD5fEl3t15AL-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-27" value="通过看板 id 调用 &lt;br&gt;/ads-dashboard/dashboard/getDashboard 获取看板信息（看板信息包含所有报告信息）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="380" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-28" target="mEZ1tc_DkD5fEl3t15AL-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-28" value="每个看板下有多个报告，渲染形式为多个 tab，默认情况下选中第一个报告，当选中报告时" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="530" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-29" target="mEZ1tc_DkD5fEl3t15AL-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-29" value="通过报告 id 调用&lt;br&gt;/ads-dashboard/dashboard/getReport &lt;br&gt;获取报告信息（报告信息包含所有模块信息）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="670" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-30" target="mEZ1tc_DkD5fEl3t15AL-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-30" value="DashboardReport 组件获取到报告信息之后，将其中的模块信息分发到对应的DashboardModule 组件" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="820" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-31" target="mEZ1tc_DkD5fEl3t15AL-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-31" value="DashboardModule 组件获取到模块信息" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="970" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-32" target="mEZ1tc_DkD5fEl3t15AL-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-32" value="根据 chartGroupList 对其进行列（column）的划分" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297.75" y="1110" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-33" target="mEZ1tc_DkD5fEl3t15AL-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-33" value="根据&amp;nbsp;horizontalList 对其进行行（row）的划分" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297.75" y="1250" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q3qjlSnDNWgxYjctc4o0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-34" target="mEZ1tc_DkD5fEl3t15AL-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-34" value="每一行中有多个 chart，通过&amp;nbsp; getChartCategoryByType(chartType) 对 chart 进行分类，不同类型的 chart 有不同的渲染方式" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297.75" y="1380" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.461;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-46" value="Echarts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="mEZ1tc_DkD5fEl3t15AL-37" vertex="1" connectable="0">
           <mxGeometry x="0.1665" y="3" relative="1" as="geometry">
             <mxPoint x="-9" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-38">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-41" value="Table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mEZ1tc_DkD5fEl3t15AL-39">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-41" value="Table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="mEZ1tc_DkD5fEl3t15AL-39" vertex="1" connectable="0">
           <mxGeometry x="0.2397" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-47">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-35" target="mEZ1tc_DkD5fEl3t15AL-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-49" value="Custom" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mEZ1tc_DkD5fEl3t15AL-48">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-49" value="Custom" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="mEZ1tc_DkD5fEl3t15AL-48" vertex="1" connectable="0">
           <mxGeometry x="-0.1815" y="-4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-35" value="chartCategory" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="311.5" y="1520" width="209" height="80" as="geometry" />
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-35" value="chartCategory" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="309.88" y="1520" width="209" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-36" target="mEZ1tc_DkD5fEl3t15AL-50">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-36" target="mEZ1tc_DkD5fEl3t15AL-50" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="61" y="1880" />
-              <mxPoint x="416" y="1880" />
+              <mxPoint x="59.38" y="1880" />
+              <mxPoint x="414.38" y="1880" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-36" value="获取 Echarts 渲染配置项getRenderEChartsOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-67.25" y="1730" width="257" height="90" as="geometry" />
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-36" value="获取 Echarts 渲染配置项getRenderEChartsOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-68.87" y="1730" width="257" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-38" target="mEZ1tc_DkD5fEl3t15AL-50">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-38" target="mEZ1tc_DkD5fEl3t15AL-50" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="769" y="1880" />
-              <mxPoint x="416" y="1880" />
+              <mxPoint x="767.38" y="1880" />
+              <mxPoint x="414.38" y="1880" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-38" value="获取 iview Table 渲染配置项getRenderTableOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="640" y="1730" width="257" height="90" as="geometry" />
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-38" value="获取 iview Table 渲染配置项getRenderTableOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="638.38" y="1730" width="257" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mEZ1tc_DkD5fEl3t15AL-47" target="mEZ1tc_DkD5fEl3t15AL-50">
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mEZ1tc_DkD5fEl3t15AL-47" target="mEZ1tc_DkD5fEl3t15AL-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-47" value="Custom 表示的含义就是该 chart 不属于 Echarts 或者 Table 类型，对这些异构的数据进行单独的处理，渲染配置项和渲染所需要的组件都不固定" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="287.5" y="1730" width="257" height="90" as="geometry" />
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-47" value="Custom 表示的含义就是该 chart 不属于 Echarts 或者 Table 类型，对这些异构的数据进行单独的处理，渲染配置项和渲染所需要的组件都不固定" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="285.88" y="1730" width="257" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mEZ1tc_DkD5fEl3t15AL-50" value="得到渲染的最终结果 chart" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="287.5" y="1940" width="257" height="90" as="geometry" />
+        <mxCell id="mEZ1tc_DkD5fEl3t15AL-50" value="得到渲染的最终结果 chart" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="285.88" y="1940" width="257" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
