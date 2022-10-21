@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-21T07:31:33.512Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="SVedK6D5E-lM7PjrSBFn" version="20.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-10-21T07:42:39.154Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="rXYzBtJI08MBWufPnGqy" version="20.4.1" type="github" pages="2">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2377" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -337,7 +337,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="un8R5NfVIWJMA1M5LBgG" name="DashboardModule-布局组成">
+  <diagram id="un8R5NfVIWJMA1M5LBgG" name="DashboardModule-布局示意图">
     <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
