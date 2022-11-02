@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T08:14:33.727Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="kcgd_IsympTvk6hyAM74" version="20.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-02T10:30:32.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="qat-B8W4EHZ0lTGdbq86" version="20.4.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -90,7 +90,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="iojGbuhWal9sQf1TP7xn-39" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;选取Excel中的一列，复制到人群筛选框中&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
+        <mxCell id="iojGbuhWal9sQf1TP7xn-39" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;选取Excel中的一列，复制到人群筛选框中，然后点击筛选框之外的地方时&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="156" y="370" as="sourcePoint" />
             <mxPoint x="586" y="370" as="targetPoint" />
