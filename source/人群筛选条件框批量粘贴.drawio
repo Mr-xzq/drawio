@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T10:32:26.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="NFd2jhk-i7_Yhm067Jvn" version="20.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-02T10:32:58.894Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="ls1ndp6QgKcYXCat4dUy" version="20.4.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="iojGbuhWal9sQf1TP7xn-5" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="140" y="240" width="20" height="800" as="geometry" />
+          <mxGeometry x="370" y="200" width="20" height="800" as="geometry" />
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-4" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="iojGbuhWal9sQf1TP7xn-5">
           <mxGeometry x="5" y="80" width="10" height="560" as="geometry" />
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-7" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;MultipleTag 组件&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="540" y="240" width="100" height="800" as="geometry" />
+          <mxGeometry x="770" y="200" width="100" height="800" as="geometry" />
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="iojGbuhWal9sQf1TP7xn-7">
           <mxGeometry x="45" y="130" width="10" height="510" as="geometry" />
@@ -50,7 +50,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-8" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Values 组件&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="240" width="100" height="800" as="geometry" />
+          <mxGeometry x="1260" y="200" width="100" height="800" as="geometry" />
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-31" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="iojGbuhWal9sQf1TP7xn-8">
           <mxGeometry x="45" y="450" width="10" height="150" as="geometry" />
@@ -74,26 +74,26 @@
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-37" value="返回切割好的数组" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1" source="iojGbuhWal9sQf1TP7xn-8">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="760" y="840" as="sourcePoint" />
-            <mxPoint x="600" y="840" as="targetPoint" />
+            <mxPoint x="990" y="800" as="sourcePoint" />
+            <mxPoint x="830" y="800" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="830" y="840" />
+              <mxPoint x="1060" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-38" value="展示切割好的多个数据给用户" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="589.5" y="880" as="sourcePoint" />
-            <mxPoint x="160" y="880" as="targetPoint" />
+            <mxPoint x="819.5" y="840" as="sourcePoint" />
+            <mxPoint x="390" y="840" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="340" y="880" />
+              <mxPoint x="570" y="840" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="iojGbuhWal9sQf1TP7xn-39" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;选取Excel中的一列，复制到人群筛选框中，然后点击筛选框之外的地方时&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="156" y="370" as="sourcePoint" />
-            <mxPoint x="586" y="370" as="targetPoint" />
+            <mxPoint x="386" y="330" as="sourcePoint" />
+            <mxPoint x="816" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
