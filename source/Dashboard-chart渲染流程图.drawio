@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T08:13:05.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="YQwXMGl5lgdUM55dgy33" version="20.7.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-12-16T08:13:40.267Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="St3Do4HSyqvVfPmSUVGa" version="20.7.2" type="github" pages="4">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2389" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -348,7 +348,7 @@
         <mxCell id="7Qaus-57F_pzgionE2Ez-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-1">
           <mxGeometry x="10" y="80" width="10" height="670" as="geometry" />
         </mxCell>
-        <mxCell id="7Qaus-57F_pzgionE2Ez-3" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Dashboard Wrapper&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="7Qaus-57F_pzgionE2Ez-3" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Dashboard&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="795" y="200" width="100" height="800" as="geometry" />
         </mxCell>
         <mxCell id="7Qaus-57F_pzgionE2Ez-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
@@ -408,7 +408,7 @@
             <mxPoint x="1650" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4oqH9PfmzQVTGZYobijz-4" value="将渲染好的模块组合成报告返回给看板容器" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
+        <mxCell id="4oqH9PfmzQVTGZYobijz-4" value="将渲染好的模块组合成报告返回给看板" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1310" y="960" as="sourcePoint" />
             <mxPoint x="850" y="960" as="targetPoint" />
