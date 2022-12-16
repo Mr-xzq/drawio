@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T07:35:32.102Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="12mjKD4njanR9NS1ukrB" version="20.7.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-12-16T07:45:09.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="dxHgT6FQK4I9DyX3UV5k" version="20.7.2" type="github" pages="4">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2389" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -125,13 +125,13 @@
         <mxCell id="mEZ1tc_DkD5fEl3t15AL-50" value="得到渲染的最终结果 chart" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="285.5" y="2280" width="257" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="jEBjZ_rGrw8j57a1j9So-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="4uhROTKW4WrlrpFnSnR8-1" target="4uhROTKW4WrlrpFnSnR8-3" edge="1">
+        <mxCell id="ikdmHqkjZkrT0IUosxYv-1" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4uhROTKW4WrlrpFnSnR8-1" target="4uhROTKW4WrlrpFnSnR8-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4uhROTKW4WrlrpFnSnR8-1" value="chartGroup 具有一个或者多个 chartList，而 chartList 代表行的维度，也就是说 chartGroupList 具有一行或者多行" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="297" y="1270" width="232.5" height="90" as="geometry" />
+          <mxGeometry x="297" y="1270" width="232.5" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jEBjZ_rGrw8j57a1j9So-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;endArrow=none;endFill=0;" parent="1" source="4uhROTKW4WrlrpFnSnR8-3" target="mEZ1tc_DkD5fEl3t15AL-33" edge="1">
+        <mxCell id="ikdmHqkjZkrT0IUosxYv-2" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4uhROTKW4WrlrpFnSnR8-3" target="mEZ1tc_DkD5fEl3t15AL-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4uhROTKW4WrlrpFnSnR8-3" value="chartList 中具有一个或者多个&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;horizontal_list，而&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;horizontal_list 同样代表行的维度，也就是说&amp;nbsp;&lt;/span&gt;chartList&amp;nbsp; 具有一行或者多行" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
@@ -711,11 +711,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7Qaus-57F_pzgionE2Ez-1" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="200" width="20" height="800" as="geometry" />
+        <mxCell id="7Qaus-57F_pzgionE2Ez-1" value="前端" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="220" width="30" height="800" as="geometry" />
         </mxCell>
         <mxCell id="7Qaus-57F_pzgionE2Ez-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-1">
-          <mxGeometry x="5" y="80" width="10" height="680" as="geometry" />
+          <mxGeometry x="10" y="80" width="10" height="680" as="geometry" />
         </mxCell>
         <mxCell id="7Qaus-57F_pzgionE2Ez-3" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;MultipleTag 组件&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="770" y="200" width="100" height="800" as="geometry" />
