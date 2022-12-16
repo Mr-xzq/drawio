@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T08:29:07.447Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="DDUaMroIcnY_lOoi67Ia" version="20.7.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-12-16T08:29:56.529Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="E7eT_JAYdX12gzc131rn" version="20.7.2" type="github" pages="5">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2310" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -813,6 +813,308 @@
         </mxCell>
         <mxCell id="0_2pcE1hY4votIOxN0_p-35" value="singleChart" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="218" y="200" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qt3qi4hyU4aanpfrSqZj" name="DashboardModule具体渲染逻辑">
+    <mxGraphModel dx="2310" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1070" width="510" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-3" target="ytSC75tZ5hGYx8qlLUPL-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-3" value="DashboardModule 组件获取到模块信息" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="970" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-5" target="ytSC75tZ5hGYx8qlLUPL-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-5" value="根据 chartGroupList 对其进行列（column）的划分，也就是说 chartGroup 代表列的维度" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297.75" y="1110" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-7" target="ytSC75tZ5hGYx8qlLUPL-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-7" value="horizontalList 具有一个或者多个 chart，而这里的 chart 就是我们最终承载渲染的容器元素" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="1560" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-9" target="ytSC75tZ5hGYx8qlLUPL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-9" value="每一行中有多个 chart，通过&amp;nbsp; getChartCategoryByType(chartType) 对 chart 进行分类，不同类型的 chart 有不同的渲染方式" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="1688" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.461;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-16" target="ytSC75tZ5hGYx8qlLUPL-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-11" value="Echarts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ytSC75tZ5hGYx8qlLUPL-10">
+          <mxGeometry x="0.1665" y="3" relative="1" as="geometry">
+            <mxPoint x="-9" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-16" target="ytSC75tZ5hGYx8qlLUPL-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-13" value="Table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ytSC75tZ5hGYx8qlLUPL-12">
+          <mxGeometry x="0.2397" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-16" target="ytSC75tZ5hGYx8qlLUPL-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-15" value="Custom" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ytSC75tZ5hGYx8qlLUPL-14">
+          <mxGeometry x="-0.1815" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-16" value="chartCategory" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="1828" width="209" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-18" target="ytSC75tZ5hGYx8qlLUPL-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="2180" />
+              <mxPoint x="414" y="2180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-18" value="获取 Echarts 渲染配置项getRenderEChartsOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-68.12" y="2038" width="257" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-20" target="ytSC75tZ5hGYx8qlLUPL-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="768" y="2180" />
+              <mxPoint x="414" y="2180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-20" value="获取 iview Table 渲染配置项getRenderTableOption(renderChartConfig)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="639.13" y="2038" width="257" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-22" target="ytSC75tZ5hGYx8qlLUPL-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-22" value="Custom 表示的含义就是该 chart 不属于 Echarts 或者 Table 类型，对这些异构的数据进行单独的处理，渲染配置项和渲染所需要的组件都不固定" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="284.75" y="2038" width="257" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-23" value="得到渲染的最终结果 chart" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="285.5" y="2280" width="257" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-24" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-25" target="ytSC75tZ5hGYx8qlLUPL-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-25" value="chartGroup 具有一个或者多个 chartList，而 chartList 代表行的维度，也就是说 chartGroupList 具有一行或者多行" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="1270" width="232.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-26" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ytSC75tZ5hGYx8qlLUPL-27" target="ytSC75tZ5hGYx8qlLUPL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-27" value="chartList 中具有一个或者多个&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;horizontal_list，而&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;horizontal_list 同样代表行的维度，也就是说&amp;nbsp;&lt;/span&gt;chartList&amp;nbsp; 具有一行或者多行" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="1400" width="232.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-28" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1250" width="476" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-29" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-28">
+          <mxGeometry width="476" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-30" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-29">
+          <mxGeometry width="159" height="134" as="geometry">
+            <mxRectangle width="159" height="134" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-31" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-29">
+          <mxGeometry x="159" width="158" height="134" as="geometry">
+            <mxRectangle width="158" height="134" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-32" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-29">
+          <mxGeometry x="317" width="159" height="134" as="geometry">
+            <mxRectangle width="159" height="134" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-33" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-28">
+          <mxGeometry y="134" width="476" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-34" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-33">
+          <mxGeometry width="159" height="138" as="geometry">
+            <mxRectangle width="159" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-35" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-33">
+          <mxGeometry x="159" width="158" height="138" as="geometry">
+            <mxRectangle width="158" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-36" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-33">
+          <mxGeometry x="317" width="159" height="138" as="geometry">
+            <mxRectangle width="159" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-37" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-28">
+          <mxGeometry y="272" width="476" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-38" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-37">
+          <mxGeometry width="159" height="138" as="geometry">
+            <mxRectangle width="159" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-39" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-37">
+          <mxGeometry x="159" width="158" height="138" as="geometry">
+            <mxRectangle width="158" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-40" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-37">
+          <mxGeometry x="317" width="159" height="138" as="geometry">
+            <mxRectangle width="159" height="138" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-41" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="860" y="1250" as="sourcePoint" />
+            <mxPoint x="860" y="1180" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1019" y="1250" as="sourcePoint" />
+            <mxPoint x="1019" y="1180" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-43" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1177" y="1250" as="sourcePoint" />
+            <mxPoint x="1177" y="1180" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-44" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1336" y="1250" as="sourcePoint" />
+            <mxPoint x="1336" y="1180" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-45" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="780" y="1384" as="sourcePoint" />
+            <mxPoint x="860" y="1384" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-46" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="780" y="1522" as="sourcePoint" />
+            <mxPoint x="860" y="1522" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-47" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="780" y="1660" as="sourcePoint" />
+            <mxPoint x="860" y="1660" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-48" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="780" y="1250" as="sourcePoint" />
+            <mxPoint x="860" y="1250" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-49" value="chartGroup" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="1195" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-50" value="chartGroup" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1195" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-51" value="chartGroup" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="1195" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-52" value="chartList" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="775" y="1295" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-53" value="chartList" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1440" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-54" value="chartList" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1580" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-55" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1250" width="160" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-56" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-55">
+          <mxGeometry width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-57" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-56">
+          <mxGeometry width="53" height="45" as="geometry">
+            <mxRectangle width="53" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-58" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-56">
+          <mxGeometry x="53" width="54" height="45" as="geometry">
+            <mxRectangle width="54" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-59" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-56">
+          <mxGeometry x="107" width="53" height="45" as="geometry">
+            <mxRectangle width="53" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-60" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-55">
+          <mxGeometry y="45" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-61" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-60">
+          <mxGeometry width="53" height="44" as="geometry">
+            <mxRectangle width="53" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-62" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-60">
+          <mxGeometry x="53" width="54" height="44" as="geometry">
+            <mxRectangle width="54" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-63" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-60">
+          <mxGeometry x="107" width="53" height="44" as="geometry">
+            <mxRectangle width="53" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-64" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-55">
+          <mxGeometry y="89" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-65" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-64">
+          <mxGeometry width="53" height="45" as="geometry">
+            <mxRectangle width="53" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-66" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-64">
+          <mxGeometry x="53" width="54" height="45" as="geometry">
+            <mxRectangle width="54" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-67" value="chart" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="ytSC75tZ5hGYx8qlLUPL-64">
+          <mxGeometry x="107" width="53" height="45" as="geometry">
+            <mxRectangle width="53" height="45" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-68" value="horizontal_list" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1260" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-69" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;chartGroupList&amp;nbsp;&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1120" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ytSC75tZ5hGYx8qlLUPL-70" value="具体布局规则可以参考右侧示意图" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1360" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
