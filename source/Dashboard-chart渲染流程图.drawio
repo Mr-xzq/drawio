@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T07:34:15.512Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="0TqLhhwE5hjpaSGq0ZZs" version="20.7.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-12-16T07:35:32.102Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="12mjKD4njanR9NS1ukrB" version="20.7.2" type="github" pages="4">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2389" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -711,6 +711,111 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="7Qaus-57F_pzgionE2Ez-1" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="200" width="20" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-1">
+          <mxGeometry x="5" y="80" width="10" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-3" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;MultipleTag 组件&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="200" width="100" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
+          <mxGeometry x="45" y="130" width="10" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
+          <mxGeometry x="50" y="460" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-6" value="changeTag" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontColor=#000000;" edge="1" parent="7Qaus-57F_pzgionE2Ez-3" target="7Qaus-57F_pzgionE2Ez-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="430" />
+              <mxPoint x="85" y="430" />
+              <mxPoint x="85" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
+          <mxGeometry x="50" y="380" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-8" value="add，添加标签，并在过程中校验是否有重复的标签；&lt;br&gt;如果有，则提示当前添加的标签已经重复" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontColor=#000000;" edge="1" parent="7Qaus-57F_pzgionE2Ez-3" target="7Qaus-57F_pzgionE2Ez-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="350" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
+          <mxGeometry x="50" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-10" value="keyup：&lt;br&gt;1. 去除输入值前后的空格；&lt;br&gt;2. 监听特定按键（比如BackSpace退格键，或者Enter回车键）触发对应的行为；" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="7Qaus-57F_pzgionE2Ez-3" target="7Qaus-57F_pzgionE2Ez-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-11" value="blur：当鼠标点击输入框之外的地方时会触发" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;fontColor=#000000;" edge="1" parent="7Qaus-57F_pzgionE2Ez-3" target="7Qaus-57F_pzgionE2Ez-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="250" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-3">
+          <mxGeometry x="50" y="290" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-13" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Values 组件&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="200" width="100" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-13">
+          <mxGeometry x="45" y="530" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-13">
+          <mxGeometry x="50" y="600" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-16" value="setStringInput：&lt;br&gt;1. 将最新输入的值按照一个空格拆分成数组；&lt;br&gt;2. 对数组中的值进行去重；&lt;br&gt;3. 对数量进行限制，数组长度不能大于50；" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="7Qaus-57F_pzgionE2Ez-13" target="7Qaus-57F_pzgionE2Ez-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="580" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-17" value="展示切割好的多个数据给用户" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="960" as="sourcePoint" />
+            <mxPoint x="390" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-18" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;选取Excel中的一列，复制到人群筛选框中，然后点击筛选框之外的地方时&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="386" y="330" as="sourcePoint" />
+            <mxPoint x="816" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-19" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;emit(&#39;changeTag&#39;, tagArr)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;entryX=0.38;entryY=0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="826" y="730" as="sourcePoint" />
+            <mxPoint x="1304.8000000000002" y="730.1500000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7Qaus-57F_pzgionE2Ez-20" value="返回切割好的数组" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1299.5" y="880" as="sourcePoint" />
+            <mxPoint x="830" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1050" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
