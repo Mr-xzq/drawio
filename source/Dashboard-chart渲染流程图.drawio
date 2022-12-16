@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T08:32:36.259Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="5UXVDwamW3p_xSdVPpvR" version="20.7.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-12-16T08:32:53.391Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8FwrWMInNnvV6svx2Pcd" version="20.7.2" type="github" pages="5">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2310" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -415,7 +415,7 @@
         <mxCell id="h-tam362cuXDDjJf1MuF-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3uZYUsjHMspOrYEC7CPV-2">
           <mxGeometry x="51" y="645" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="h-tam362cuXDDjJf1MuF-3" value="按照不同的类别对模块进行分类渲染" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="h-tam362cuXDDjJf1MuF-2" parent="3uZYUsjHMspOrYEC7CPV-2">
+        <mxCell id="h-tam362cuXDDjJf1MuF-3" value="按照不同的类别对模块进行分类渲染&lt;br&gt;具体渲染逻辑可参考后文" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="h-tam362cuXDDjJf1MuF-2" parent="3uZYUsjHMspOrYEC7CPV-2">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="56" y="625" as="sourcePoint" />
             <Array as="points">
