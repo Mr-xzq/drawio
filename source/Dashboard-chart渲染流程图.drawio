@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T08:30:04.271Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="ooWEqbh7n-RknvX8Zu2c" version="20.7.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-12-16T08:30:21.438Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8fpTyPrv0o1TaVR8esiE" version="20.7.2" type="github" pages="5">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2310" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -365,7 +365,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="7Qaus-57F_pzgionE2Ez-13" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Dashboard Report&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="7Qaus-57F_pzgionE2Ez-13" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;DashboardReport&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="1210" y="200" width="100" height="800" as="geometry" />
         </mxCell>
         <mxCell id="7Qaus-57F_pzgionE2Ez-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="7Qaus-57F_pzgionE2Ez-13">
@@ -406,7 +406,7 @@
         <mxCell id="3uZYUsjHMspOrYEC7CPV-1" value="&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1035" y="385" width="20" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3uZYUsjHMspOrYEC7CPV-2" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Dashboard Module&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="3uZYUsjHMspOrYEC7CPV-2" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;DashboardModule&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="1604" y="200" width="100" height="800" as="geometry" />
         </mxCell>
         <mxCell id="3uZYUsjHMspOrYEC7CPV-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;labelBackgroundColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="3uZYUsjHMspOrYEC7CPV-2">
