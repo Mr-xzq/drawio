@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T08:30:21.438Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8fpTyPrv0o1TaVR8esiE" version="20.7.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-12-16T08:31:13.287Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="uCP-jWv5mKqtJQrdTITc" version="20.7.2" type="github" pages="5">
   <diagram id="p2z1zbN4ogXIeRbA9dGu" name="chart渲染流程图">
     <mxGraphModel dx="2310" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -442,8 +442,8 @@
         <mxCell id="4oqH9PfmzQVTGZYobijz-13" value="&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1045" y="395" width="20" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X0CXsqKMWTTsBJdVQHXQ-1" value="将其中的模块信息分发到对应的 DashboardModule&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="720" width="300" height="30" as="geometry" />
+        <mxCell id="X0CXsqKMWTTsBJdVQHXQ-1" value="将报告信息中的模块信息分发到对应的 DashboardModule&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="720" width="330" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
