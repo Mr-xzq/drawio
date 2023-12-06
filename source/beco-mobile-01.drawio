@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-06T07:12:59.375Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="E1vd9nH_eU3Q9IcGS0yr" version="22.1.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-12-06T07:13:19.572Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="QssJ2laBku0IBxxatBs5" version="22.1.5" type="github" pages="2">
   <diagram name="Page-1" id="whMXDPhd5R6FyN1RhxbH">
     <mxGraphModel dx="2645" dy="2072" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -214,11 +214,11 @@
         <mxCell id="pHjuA5J41Ag6kjhvs1o5-64" value="全局状态管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="88.62" y="808.02" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pHjuA5J41Ag6kjhvs1o5-65" value="Router" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pHjuA5J41Ag6kjhvs1o5-65" value="路由层" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-52.5" y="510.04999999999995" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pHjuA5J41Ag6kjhvs1o5-66" value="Data Management" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-82.5" y="823.02" width="120" height="30" as="geometry" />
+        <mxCell id="pHjuA5J41Ag6kjhvs1o5-66" value="状态管理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-57.5" y="823.02" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pHjuA5J41Ag6kjhvs1o5-67" value="前端数据持久层" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="232.5" y="808.02" width="120" height="60" as="geometry" />
